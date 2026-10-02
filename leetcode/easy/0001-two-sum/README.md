@@ -53,9 +53,9 @@ Output: [0,1]
 ## Solution
 
 **Language:** C++  
-**Runtime:** 42 ms (beats 27.87%)  
-**Memory:** 14 MB (beats 89.53%)  
-**Submitted:** 2026-10-02T18:20:22.117Z  
+**Runtime:** 45 ms (beats 14.82%)  
+**Memory:** 14 MB (beats 99.04%)  
+**Submitted:** 2026-10-02T18:20:30.879Z  
 
 ```cpp
 class Solution {
