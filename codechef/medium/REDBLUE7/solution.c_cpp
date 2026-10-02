@@ -1,0 +1,43 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+void solve(){
+    int n;
+    cin>>n;
+    vector<long long>a(n);
+    long long total_sum =  0;
+    for(int i=0; i<n; i++){
+        cin>>a[i];
+        total_sum+= a[i];
+        }
+        sort(a.begin(),a.end());
+        vector<long long>pref(n+1,0);
+        for(int i=0; i<n;i++){
+            pref[i+1]=pref[i]+a[i];
+        }
+        long long max_val = 0;
+        for(int k=1;k<n;++k){
+            long long s_r = 0;
+            if(2*k<n){
+                s_r = pref[n]-pref[n-k];
+            }
+            else{
+                s_r=pref[k];
+            }
+            long long current_val = k*total_sum+s_r*(n-2LL*k);
+            max_val=max(max_val,current_val);
+        }
+        cout<<max_val<<"\n";
+}
+
+int main() {
+	// your code goes here
+ios_base::sync_with_stdio(false);
+cin.tie(nullptr);
+int t;
+cin>>t;
+while(t--){
+    solve();
+}
+return 0;
+}
