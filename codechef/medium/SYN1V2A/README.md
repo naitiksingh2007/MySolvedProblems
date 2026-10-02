@@ -4,21 +4,31 @@
 
 ## Problem
 
-_Description not available._
+### Printing a number
+
+Listen
+
+In the last problem we saw how to print a number. Now it's your turn to print another number.
+
+Your task is to print the number 20 on the screen.
+
+In the editor, I have written some code for you. But instead of number 20, __ (underscores) are written.
+
+Delete those underscores and write 20 at that place to complete the code.
 
 ## Solution
 
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-02T18:45:54.318Z  
+**Submitted:** 2026-10-02T18:46:28.808Z  
 
 ```c_cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-  cout << 12;
+    cout << 20;
 }
 
 ```
